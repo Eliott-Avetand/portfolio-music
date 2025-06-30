@@ -1,3 +1,9 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+    --color-primary: #B04072;
+
+    --background-image-landing: url("./lib/Img/home.jpg")
+}

@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
 @theme {
-    --color-primary: #B04072;
+    /*Theme*/
+    --color-primary: #050A27;
+    --color-accent: #B04072;
+    --color-light: #F4F3F2;
 
+    /*Font*/
+    --font-display: "Montserrat", "sans-serif";
+
+    /*Images*/
     --background-image-landing: url("./lib/Img/home.jpg")
 }

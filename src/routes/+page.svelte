@@ -1,3 +1,11 @@
-<div class='bg-landing bg-no-repeat bg-contain bg-size-[length:100%_100%] w-screen h-screen'>
+<script>
+    import Landing from '$lib/Components/Home/landing.svelte'
+    import About from '$lib/Components/Home/about.svelte'
+    import Compositions from '$lib/Components/Home/compositions.svelte';
+</script>
 
+<div class="bg-primary font-display">
+    <Landing />
+    <About />
+    <Compositions />
 </div>

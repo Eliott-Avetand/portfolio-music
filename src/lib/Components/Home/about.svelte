@@ -2,7 +2,7 @@
     import SectionTitle from "../Text/SectionTitle.svelte";
 </script>
 
-<div class="p-10 relative">
+<div id="about" class="p-10 relative">
     <SectionTitle title="About" description="The game's main character!" />
 
     <div class="flex justify-center items-center z-1 relative">

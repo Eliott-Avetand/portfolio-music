@@ -10,7 +10,7 @@
     import Composition6 from "$lib/Img/composition_6.png?enhanced";
 </script>
 
-<div class="px-20 py-10 flex flex-col items-center">
+<div id="music" class="px-20 py-10 flex flex-col items-center">
     <SectionTitle title="Compositions" description="All of my works" />
     <div class="flex flex-wrap justify-center">
         <CompositionItem imgSrc={Composition1} title="Principles of Strings" spotify="https://spotify.com" />

@@ -9,16 +9,16 @@
     import lol from "$lib/Img/lol.png?enhanced";
     import lolLogo from "$lib/Img/lol_logo.png?enhanced";
     import hk from "$lib/Img/hk.png?enhanced";
-    import hkLogo from "$lib/Img/hk_logo.png?enhanced";
+    import hkLogo from "$lib/Img/hk_logo.webp?enhanced";
 </script>
 
 <div id="games">
     <SectionTitle title="Games" description="Games and media where my music comes to life." />
 
-    <div class="grid grid-cols-4 gap-5 px-10">
-        <GameItem title="Genshin" bg={genshin} logo={genshinLogo} gameUrl="https://genshin.hoyoverse.com/fr/home" startRow={0} startCol={0} spanRow={2} spanCol={2} />
-        <GameItem title="League of Legends" bg={lol} logo={lolLogo} gameUrl="https://www.leagueoflegends.com/fr-fr/" startRow={0} startCol={2} spanRow={1} spanCol={2} />
-        <GameItem title="Hades" bg={hades} logo={hadesLogo} gameUrl="https://store.steampowered.com/app/1145360/Hades/" startRow={0} startCol={4} spanRow={3} spanCol={1} />
-        <GameItem title="Hollow Knight" bg={hk} logo={hkLogo} gameUrl="https://store.steampowered.com/app/367520/Hollow_Knight/" startRow={1} startCol={2} spanRow={2} spanCol={2} />
+    <div class="grid grid-cols-5 gap-5 px-10">
+        <GameItem title="Genshin" bg={genshin} logo={genshinLogo} gameUrl="https://genshin.hoyoverse.com/fr/home" startRow="1" startCol="1" endRow="3" endCol={3} />
+        <GameItem title="League of Legends" bg={lol} logo={lolLogo} gameUrl="https://www.leagueoflegends.com/fr-fr/" startRow="1" startCol="3" endRow="1" endCol="6" />
+        <GameItem title="Hades" bg={hades} logo={hadesLogo} gameUrl="https://store.steampowered.com/app/1145360/Hades/" startRow="1" startCol="1" endRow="4" endCol="6" />
+        <GameItem title="Hollow Knight" bg={hk} logo={hkLogo} gameUrl="https://store.steampowered.com/app/367520/Hollow_Knight/" startRow="2" startCol="3" endRow="4" endCol="5" />
     </div>
 </div>

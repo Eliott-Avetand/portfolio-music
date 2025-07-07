@@ -34,7 +34,7 @@
         font-size: 250px;
         z-index: 0;
         color: transparent;
-        -webkit-text-stroke: .8px #fff;
+        -webkit-text-stroke: .3px #fff;
     }
 
     .glow::before {

@@ -34,9 +34,9 @@
 	}
 </script>
 
-<div class={['fixed w-full text-white flex justify-between items-center px-10 z-100 duration-300', passedAnchor && 'bg-black/80']}>
-    <enhanced:img src="$lib/Img/logo.png" alt="Eliott Avetand" class="w-16 select-none pointer-events-none" />
-    <nav>
+<div class={['hidden fixed w-full text-white flex justify-between items-center px-10 z-100 duration-300', passedAnchor && 'bg-black/80']}>
+    <enhanced:img src="$lib/Img/logo.png" alt="Eliott Avetand" class="select-none pointer-events-none" />
+    <nav class="">
         <a href="#home" class='link' class:active={current === 'home'} onclick={(event: MouseEvent) => handleAnchorClick(event, 'home')}>Home</a>
         <a href="#about" class='link' class:active={current === 'about'} onclick={(event: MouseEvent) => handleAnchorClick(event, 'about')}>About Me</a>
         <a href="#music" class='link' class:active={current === 'music'} onclick={(event: MouseEvent) => handleAnchorClick(event, 'music')}>Music</a>

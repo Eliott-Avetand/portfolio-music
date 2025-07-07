@@ -2,7 +2,11 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
-@source inline("{col-end-{1,9}}");
+
+@source inline("row-start-1 row-start-2 row-start-3 row-start-4");
+@source inline("row-end-2 row-end-3 row-end-4 row-end-5");
+@source inline("col-start-1 col-start-2 col-start-3 col-start-4 col-start-5");
+@source inline("col-end-2 col-end-3 col-end-4 col-end-5 col-end-6");
 
 @theme {
     /*Theme*/

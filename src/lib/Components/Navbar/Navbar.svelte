@@ -1,5 +1,24 @@
 <script lang='ts'>
-    let current = $state("home")
+    import { onMount, onDestroy } from "svelte";
+
+    let current = $state("home");
+    let passedAnchor = $state(false);
+
+    onMount(() => {
+        const target = document.querySelector("#home");
+        if (!target) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            for (const entry of entries)
+                passedAnchor = !entry.isIntersecting
+        }, { threshold: 0.1 });
+
+        observer.observe(target);
+
+        onDestroy(() => {
+            observer.disconnect();
+        })
+    })
 
     const handleAnchorClick = (event: MouseEvent, currentElement: string) => {
         current = currentElement
@@ -15,7 +34,7 @@
 	}
 </script>
 
-<div class='fixed w-full text-white flex justify-between items-center px-10'>
+<div class={['fixed w-full text-white flex justify-between items-center px-10 z-100 duration-300', passedAnchor && 'bg-black/80']}>
     <enhanced:img src="$lib/Img/logo.png" alt="Eliott Avetand" class="w-16 select-none pointer-events-none" />
     <nav>
         <a href="#home" class='link' class:active={current === 'home'} onclick={(event: MouseEvent) => handleAnchorClick(event, 'home')}>Home</a>

@@ -1,6 +1,10 @@
 <div class="border-solid border-t-1 border-light bg-primary p-4 md:p-6 lg:p-10 text-light">
     <enhanced:img src="$lib/Img/logo.png" alt="Eliott Avetand" class="w-10 md:w-16 select-none pointer-events-none mx-auto" />
-    <div class="flex flex-col md:grid grid-cols-3 items-center mt-5 md:mt-10">
+    <div class="flex justify-center my-5">
+        <a class="mx-5 hover:underline" href="/contact">Contact me</a>
+        <a class="mx-5 hover:underline" href="/legal-notices">Legal notices</a>
+    </div>
+    <div class="flex flex-col md:grid grid-cols-3 items-center">
         <i class="text-xs md:text-sm">Illustration by [ARTIST NAME]</i>
         <nav class="flex justify-center items-center gap-2 md:gap-5 my-2">
             <a href="https://spotify.com" target="_blank" aria-label="my spotify account" class="mx-1 md:mx-5">

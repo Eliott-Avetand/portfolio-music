@@ -19,3 +19,15 @@
     --background-image-appear: url("./lib/Img/menu_appear.gif");
     --background-image-disappear: url("./lib/Img/menu_disappear.gif");
 }
+
+@layer components {
+    .custom-label {
+        color: var(--color-light);
+    }
+
+    .custom-input {
+        color: var(--color-light);
+        background: var(--color-light);
+        outline: none;
+    }
+}

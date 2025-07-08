@@ -15,5 +15,7 @@
     --font-display: "Montserrat", "sans-serif";
 
     /*Images*/
-    --background-image-landing: url("./lib/Img/home.jpg")
+    --background-image-landing: url("./lib/Img/home.jpg");
+    --background-image-appear: url("./lib/Img/menu_appear.gif");
+    --background-image-disappear: url("./lib/Img/menu_disappear.gif");
 }

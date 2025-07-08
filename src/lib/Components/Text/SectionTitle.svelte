@@ -4,7 +4,7 @@
 
 <div class="text-light font-display flex flex-col items-center">
     <h2 class='flourish'>{title}</h2>
-    <i class="not-italic font-light text-sm">{description}</i>
+    <i class="not-italic font-light text-center text-xs md:text-sm lg:text-base">{description}</i>
 </div>
 
 <style>
@@ -12,7 +12,7 @@
 
     .flourish {
         position: relative;
-        @apply text-4xl px-5;
+        @apply text-xl md:text-2xl lg:text-4xl px-2 md:px-5;
     }
 
     .flourish::after, .flourish::before {
@@ -20,13 +20,12 @@
         position: absolute;
         height: 2px;
         border-top: 5px dotted;
-        width: 50%;
         top: 50%;
-        left: -50%;
-        @apply border-light;
+        right: 0;
+        @apply border-light w-1/4 md:w-1/2 -right-1/4 md:-right-1/2;
     }
 
     .flourish::after {
-        left: 100%;
+        right: 100%;
     }
 </style>

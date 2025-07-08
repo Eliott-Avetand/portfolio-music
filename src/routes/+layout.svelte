@@ -4,6 +4,7 @@
     import Navbar from '$lib/Components/Navbar/Navbar.svelte';
     import Footer from '$lib/Components/Footer/Footer.svelte';
     import Landing from '$lib/Components/Landing/Landing.svelte';
+    import Burger from '$lib/Components/Navbar/Burger.svelte';
 
 	let { children } = $props();
     let showLanding = $state(false)
@@ -37,9 +38,10 @@
 {#if showLanding}
 	<Landing transitionOut={startFadeOut} />
 {/if}
-
+    
 {#if startFadeOut}
     <Navbar />
+    <Burger />
 
     {@render children()}
 

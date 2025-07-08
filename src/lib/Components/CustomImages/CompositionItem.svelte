@@ -2,7 +2,7 @@
 	let { imgSrc, title, spotify = "", youtube = "" } = $props();
 </script>
 
-<div class="m-5">
+<div class="m-2 md:m-5">
     <div class="group relative">
         <enhanced:img src={imgSrc} alt="composition item" class="w-sm" />
         <div class="flex justify-evenly items-center absolute w-full h-full bottom-0 opacity-0 bg-black/80 duration-600 group-hover:opacity-100">

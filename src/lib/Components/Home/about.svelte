@@ -17,7 +17,7 @@
                 A self-taught composer passionate about storytelling through music. Drawing inspiration from film, animation, and video games, he craft orchestral and hybrid soundtracks that aim to bring emotion and energy to every scene. With a strong focus on learning and continuous improvement, he’s wants to collaborate on narrative-driven projects and immersive game worlds.
             </p>
         </div>
-        <div class="glow h-[50vh] md:h-[80vh] md relative">
+        <div class="glow h-[50vh] md:h-[80vh] max-h-[1000px] md relative">
             <enhanced:img src='$lib/Img/character.png' alt="Eliott Avetand" class="w-full h-full z-1 relative" />
         </div>
     </div>

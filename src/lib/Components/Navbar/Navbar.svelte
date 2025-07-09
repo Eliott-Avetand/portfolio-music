@@ -42,7 +42,7 @@
         <a href="#music" class='link' class:active={current === 'music'} onclick={(event: MouseEvent) => handleAnchorClick(event, 'music')}>Music</a>
         <a href="#games" class='link' class:active={current === 'games'} onclick={(event: MouseEvent) => handleAnchorClick(event, 'games')}>Games</a>
     </nav>
-    <input type="button" value="Contact" class='bg-accent px-2 py-1 rounded-sm cursor-pointer'>
+    <a href="mailto:soryoz03@gmail.com" class='bg-accent px-2 py-1 rounded-sm cursor-pointer'>Contact</a>
 </div>
 
 <style>

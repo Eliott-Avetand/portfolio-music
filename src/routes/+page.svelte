@@ -11,19 +11,3 @@
     <Compositions />
     <Games />
 </div>
-
-<style>
-    @reference "../app.css";
-
-    .ink::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-        background: var(--background-image-ink);
-        background-size: cover;
-        background-position: center;
-        @apply w-screen h-screen;
-    }
-</style>

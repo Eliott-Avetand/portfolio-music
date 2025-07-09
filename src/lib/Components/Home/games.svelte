@@ -15,7 +15,7 @@
 <div id="games" class="px-5 md:px-10 lg:px-20 py-5 md:py-5">
     <SectionTitle title="Games" description="Games and media where my music comes to life." />
 
-    <div class="flex flex-col md:grid grid-cols-5 gap-1 md:gap-2 lg:gap-5 mt-5 md:mt-5">
+    <div class="flex flex-col md:grid grid-cols-5 gap-1 md:gap-2 lg:gap-5 mt-5 md:mt-5 mx-auto w-3/4 max-w-[1500px]">
         <GameItem title="Genshin" bg={genshin} logo={genshinLogo} gameUrl="https://genshin.hoyoverse.com/fr/home" startRow={1} startCol={1} endRow={3} endCol={3} />
         <GameItem title="League of Legends" bg={lol} logo={lolLogo} gameUrl="https://www.leagueoflegends.com/fr-fr/" startRow={1} startCol={3} endRow={1} endCol={5} />
         <GameItem title="Hades" bg={hades} logo={hadesLogo} gameUrl="https://store.steampowered.com/app/1145360/Hades/" startRow={1} startCol={5} endRow={3} endCol={6} />
